@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Belanja Harian</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Daftar Belanja Harian</h1>
+
+      <div class="input-form">
+        <input type="text" id="item-name" placeholder="Item Name" />
+        <input type="number" id="item-price" placeholder="Item Price" />
+        <button id="add-item">Add Item</button>
+      </div>
+
+      <table id="item-list">
+        <thead>
+          <tr>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+            <th>Pengaturan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Items will be dynamically added here -->
+        </tbody>
+      </table>
+
+      <div class="summary">
+        <h2>Total: Rp. <span id="total-price"></span></h2>
+        <button id="pay-now">Bayar</button>
+      </div>
+    </div>
+
+    <script src="edit.js"></script>
+  </body>
+</html>
